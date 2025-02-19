@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Fredoka:wght@300..700&family=Liter&family=Noto+Sans+Cuneiform&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", serif;
+}
+
+body {
+    background-image: url("https://wallpaperswide.com/download/mountain_32-wallpaper-1600x900.jpg");
+    background-size: 1600px 641px;
+    /* background-size: cover;  */
+    background-repeat: no-repeat;
+    list-style-type: none;
+}
+
+.header {
+    /* border: 1px solid black; */
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 7PX 1px 10px 8px gray;
+}
+
+a {
+    text-decoration: none;
+}
+
+.praeozo {
+    display: inline-block;
+    margin-top: 14px;
+    margin-left: 19px;
+    cursor: pointer;
+    color: #20b2aa;
+}
+
+.head-box {
+    display: inline-block;
+    margin-left: 7%;
+}
+
+a {
+    display: inline-block;
+    margin-left: 50px;
+    color: black;
+    width: 80px;
+    text-align: center;
+    position: relative;
+    bottom: 5px;
+}
+
+.yes:hover {
+    color: #8fD7c7;
+    background-color: #5f9ea0;
+    border-radius: 5px;
+    height: 25px;
+}
+
+li {
+    display: inline-block;
+}
+
+.input-search {
+    margin-left: 150px;
+    height: 30px;
+    width: 190px;
+    position: relative;
+    bottom: 4px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 1px solId rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.button-search {
+    height: 30px;
+    width: 80px;
+    position: relative;
+    bottom: 4px;
+    right: 1px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: none;
+    background-color: rgba(135, 206, 235, );
+    opacity: 0.4;
+    cursor: pointer;
+    border: 1px solId rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    margin-top: 30px;
+    width: 100%;
+    height: 530px;
+    /* border: 1px solid black; */
+    /* text-align: center; */
+}
+
+.box1 {
+    /* border: 1px solid black; */
+    /* width: 40%;
+     height: 450px; */
+    display: inline-block;
+    margin-right: 100px;
+    border-radius: px;
+    /* margin-top: 20px; */
+    position: relative;
+    left: 200px;
+    top: 100px;
+}
+
+.box2 {
+    /* border: 1px solid black; */
+    width: 300px;
+    height: 350px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 7PX 1px 10px 1px gray;
+    position: relative;
+    left: 150px;
+    top: 30px;
+}
+
+.login {
+    width: 250px;
+    margin-top: 15px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.email {
+    position: relative;
+    top: 23px;
+    right: 62px;
+}
+
+#email {
+    width: 250px;
+    position: relative;
+    top: 20px;
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+}
+
+.password {
+    position: relative;
+    top: 32px;
+    right: 50px;
+}
+
+#password {
+    width: 250px;
+    position: relative;
+    top: 30px;
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+}
+
+.Login-1 {
+    position: relative;
+    top: 50px;
+    width: 250px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fafabe;
+}
+
+.account {
+    position: relative;
+    top: 60px;
+}
+
+.system {
+    color: #fafabe;
+    background-color: none;
+    position: relative;
+    right: 50px;
+    top: 6px;
+    text-decoration-line: overline;
+}
+
+.Log-in-with {
+    position: relative;
+    top: 53px;
+    right: 5px;
+}
+
+.here {
+    position: relative;
+    top: 46px;
+    left: 25px;
+}
+.p1{
+    font-size: 43px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 550;
+    color: rgba(0,0,0,0.5)  ;
+  }
+  .p2{
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 550;
+    color: #E5E1DA;
+    opacity: 0.7;
+  }
+  .p3{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 550;
+    color: rgba(0,0,0,0.5);
+  }
+  .joinus{
+    width: 100px;
+    margin-top: 17px;
+    height: 26px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color:  rgb(199, 152, 152);
+  }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1 class="praeozo">PraRozO</h1>
+    <div class="head-box">
+    <li><a href="#" class="yes">HOME</a></li>
+    <li><a href="#" class="yes">ABOUT</a></li>
+    <li><a href="#" class="yes">SERVICE</a></li>
+    <li><a href="#" class="yes">DESIGN</a></li>
+    <li><a href="#" class="yes">CONTACT</a></li>
+  </div>
+  <input type="text" class="input-search" placeholder="Type to Search"><button class="button-search">Search</button>
+  </div>
+  <div class="container">
+    <div class="box1">
+     <h1 class="p1">Web Design &</h1>
+     <h1 class="p2">Development</h1>
+     <h1 class="p3">Course</h1>
+     <p class="p4">Web Design is a specialisation of the design stream. they also use html. <br> <span>CSS, WHYSIWYG editing software, mark up validators etc.</span> <br> <span>to create design element</span></p>
+     <button class="joinus">JOIN US</button>
+    </div>
+    <div class="box2">
+     <button class="login">Login Here</button><br>
+    <label for="email" class="email">Enter Email Here</label><br>
+    <input type="text" id="email" style="color: white;"><br>
+    <label for="email" class="password">Enter Password Here</label><br>
+    <input type="text" id="password" style="color: white;"><br>
+    <button class="Login-1" style="cursor: pointer;">Login</button>
+    <p class="account">Don't have an account?<br><a href="#" class="system">Sign up</a><p class="here">here</p></p>
+    <p class="Log-in-with">Log in with</p>
+    <i class="fa-brands fa-square-facebook" class="facebook" style="position: relative; top: 70px; right: 50px; font-size: 25px;"></i>
+    <i class="fa-brands fa-square-instagram" class="facebook" style="position: relative; top: 70px; right: 25px; font-size: 25px;"></i>
+    <i class="fa-brands fa-square-twitter" class="facebook" style="position: relative; top: 70px; left: -2px; font-size: 25px;"></i>
+    <i class="fa-brands fa-google" style="position: relative; top: 70px; left: 25px; font-size: 25px;"></i>
+    <i class="fa-brands fa-square-github" style="position: relative; top: 70px; left: 50px; font-size: 25px;"></i>
+    </div>
+  </div>
+</body>
+</html>
